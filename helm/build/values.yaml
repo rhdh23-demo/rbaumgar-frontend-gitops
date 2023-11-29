@@ -1,0 +1,15 @@
+app:
+  name: rbaumgar-poi-map-app
+  namespace: rbaumgar
+  cluster: .apps.rosa-pzz6v.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-demo/rbaumgar-frontend
+  org: rhdh23-demo
+  name: rbaumgar-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: rbaumgar/poi-map-app
+  tag: latest
